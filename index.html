@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Countdown</h1>
+    
+    <form id="eventForm">
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" required placeholder="Enter event name">
+      
+      <label for="eventDate">Event Date:</label>
+      <input type="datetime-local" id="eventDate" required>
+      
+      <button type="submit">Add Event</button>
+    </form>
+    
+    <h2>Your Upcoming Events</h2>
+    <div id="eventList"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
